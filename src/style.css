@@ -1,0 +1,33 @@
+:root {
+  --siyuan-heimu: #1f1f1f;
+}
+
+html[data-theme-mode="dark"] {
+  --siyuan-heimu: #000;
+}
+
+/* Covered text: an inline text span carrying the blackout marker (current palette form or the v0.1.0 variable). */
+span[data-type~="text"][style*="--b3-inline-style-20260930000000-heimu00-"],
+span[data-type~="text"][style*="--siyuan-heimu"] {
+  background-color: var(--siyuan-heimu) !important;
+  color: transparent !important;
+  border-radius: 3px;
+  transition: color 0.15s ease;
+}
+
+span[data-type~="text"][style*="--b3-inline-style-20260930000000-heimu00-"]:hover,
+span[data-type~="text"][style*="--siyuan-heimu"]:hover {
+  color: #fff !important;
+}
+
+/* Selecting covered text (e.g. to edit it) shows it without hovering. */
+span[data-type~="text"][style*="--b3-inline-style-20260930000000-heimu00-"]::selection,
+span[data-type~="text"][style*="--siyuan-heimu"]::selection {
+  color: #fff;
+}
+
+/* A black bar barely stands out on a dark page, so outline it there. */
+html[data-theme-mode="dark"] span[data-type~="text"][style*="--b3-inline-style-20260930000000-heimu00-"],
+html[data-theme-mode="dark"] span[data-type~="text"][style*="--siyuan-heimu"] {
+  box-shadow: 0 0 0 1px var(--b3-theme-surface-lighter);
+}

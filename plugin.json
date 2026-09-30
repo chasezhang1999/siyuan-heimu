@@ -1,0 +1,22 @@
+{
+  "name": "siyuan-heimu",
+  "author": "chasezhang1999",
+  "url": "https://github.com/chasezhang1999/siyuan-heimu",
+  "version": "0.2.0",
+  "minAppVersion": "3.7.0",
+  "backends": ["windows", "linux", "darwin", "ios", "android", "harmony", "docker"],
+  "frontends": ["desktop", "mobile", "browser-desktop", "browser-mobile", "desktop-window"],
+  "displayName": {
+    "default": "Spoiler Text",
+    "zh_CN": "黑幕"
+  },
+  "description": {
+    "default": "Adds a spoiler button to the floating toolbar; covered text is revealed on hover.",
+    "zh_CN": "在选中文字的浮动工具栏里加一个「黑幕」按钮，被遮住的文字鼠标移上去才显示。"
+  },
+  "readme": {
+    "default": "README.md",
+    "zh_CN": "README.md"
+  },
+  "keywords": ["spoiler", "heimu", "黑幕", "遮挡"]
+}

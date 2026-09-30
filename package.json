@@ -1,0 +1,21 @@
+{
+  "name": "siyuan-heimu",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "description": "Add a spoiler (黑幕) button to SiYuan's floating toolbar: covered text shows on hover.",
+  "license": "MIT",
+  "scripts": {
+    "check": "tsc --noEmit",
+    "test": "node --experimental-strip-types scripts/verify.ts",
+    "build": "npm run check && npm run test && vite build --configLoader runner"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "siyuan": "^1.2.4",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.5",
+    "vite-plugin-static-copy": "^2.2.0",
+    "vite-plugin-zip-pack": "^1.2.4"
+  }
+}
